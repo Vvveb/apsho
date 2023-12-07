@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Apsho&#x27;s single source of truth for knowledge</title>
+
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Critical CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+
+
+  <!-- Navbar Start -->
+  <nav class="main-nav navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Logo -->
+
+      <div data-v-component-site>
+        <a class="navbar-brand" href="index.html" data-v-url-params='{"host":"www.*.*"}'>
+          <img class="logo-main" src="images/logo.png" alt="site-logo" data-v-site-logo>
+          <!-- <img class="logo-white" src="images/logo-white.png" alt="logo" data-v-site-logo-dark> -->
+          <!--
+		   <img src="img/logo.png" loading="lazy" class="logo-sticky logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-sticky>
+		   <img src="img/logo-white.png" loading="lazy" class="logo-default-dark-sticky logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-dark-sticky>
+		   -->
+        </a>
+      </div>
+      <!-- Toogle Button -->
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-list" id="mainNav" data-v-component-menu="header" data-v-slug="main-menu">
+        <!-- Navigation Links -->
+        <ul class="navbar-nav ms-auto" data-v-menu-items>
+          <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
+
+            <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
+              <span data-v-menu-item-name>Resources</span>
+            </a>
+
+            <div class="dropdown-menu" data-v-menu-item-recursive>
+              <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <span data-v-menu-item-name>User Documentation</span>
+                </a>
+              </div>
+              <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Developer Documentation</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" data-v-menu-item>
+            <a class="nav-link" href="content/index.html" data-v-menu-item-url>
+              <span data-v-menu-item-name>Blog</span>
+            </a>
+          </li>
+
+          <li class="nav-item" data-v-menu-item>
+            <a href="#gallery" class="nav-link scroll" data-v-menu-item-url>
+              <span data-v-menu-item-name>Exibhition</span>
+            </a>
+          </li>
+          <li class="nav-item" data-v-menu-item>
+            <a href="#service" class="nav-link scroll" data-v-menu-item-url>
+              <span data-v-menu-item-name>Feature</span>
+            </a>
+          </li>
+          <li class="nav-item" data-v-menu-item>
+            <a href="about.html" class="nav-link scroll" data-v-menu-item-url>
+              <span data-v-menu-item-name>About</span>
+            </a>
+          </li>
+          <li class="nav-item" data-v-menu-item>
+            <a href="#faq" class="nav-link scroll" data-v-menu-item-url>
+              <span data-v-menu-item-name>FAQ</span>
+            </a>
+          </li>
+          <li class="nav-item" data-v-menu-item>
+            <a href="#blog" class="nav-link scroll" data-v-menu-item-url>
+              <span data-v-menu-item-name>Blog</span>
+            </a>
+          </li>
+          <li class="nav-item" data-v-menu-item>
+            <a href="#pricing" class="nav-link scroll" data-v-menu-item-url>
+              <span data-v-menu-item-name>Pricing</span>
+            </a>
+          </li>
+          <li class="nav-item" data-v-menu-item>
+            <a href="contact.html" class="nav-link scroll" data-v-menu-item-url>
+              <span data-v-menu-item-name>Contact</span>
+            </a>
+          </li>
+        </ul>
+        <div class="account-list list-inline">
+          <li class="list-inline-item">
+            <a href="/page/contact" class="btn btn-sm btn-violate">Get in Touch</a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+  <section class="page-header blog-single-header" data-v-component-post="post">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 data-v-post-name>
+            With more and more people working from home, either from choice or
+            necessity
+          </h2>
+          <div class="post-meta">
+            <ul>
+              <li>
+                <div class="post-avatar" data-v-if="post.avatar">
+                  <img src="images/blog/blog-feature.jpg" alt="avatar" loading="lazy" data-v-post-avatar>
+                </div>
+              </li>
+              <li>
+                <h5 data-v-post-display_name>
+                  Jesia Lickons
+                </h5>
+              </li>
+              <li>
+                <span data-v-post-created_at data-filter-friendly_date>Jul 13, 2020</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="blog-single" data-v-component-post="post">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <article class="blog-single-post">
+            <div data-v-if="post.image">
+              <img src="images/blog/blog-post-1.jpg" alt="blog-thumb" data-v-post-image />
+            </div>
+            <div data-v-post-content>
+              <p>
+                A lot has changed about how we work, and most people have no choice
+                but to transition to working from home. But even before the
+                pandemic, an increasing number of people bid goodbye to their
+                onerous commute to become freelancers and telecommuters. Thanks to
+                ever-evolving technologies such as Skype, Zoom, Facetime, Google
+                Hangouts, Slack, and cloud computing, it’s no longer necessary to be
+                in an office to be productive. In fact, most tasks can be done just
+                as effectively from home.
+              </p>
+              <p>
+                Working from home can be one of the greatest perks of doing
+                freelance work. But as appealing as remote work sounds, it comes
+                with several challenges. What if you need something important from
+                the office that you have no access to? What if loneliness takes over
+                and you experience time management problems? What if you lose
+                connection with colleagues? What if you’re overwhelmed by other
+                home-related distractions like family members, pets, and
+                electronics?
+              </p>
+              <img src="images/blog/single-blog-2.jpg" alt="banner" />
+              <p>
+                If you need inspiration, we've compiled some awesome information
+                from the top-performing professionals in the industry. These are
+                answers to commonly asked questions from artists you may never get
+                to meet in person, and we combined them in one freaking sweet book.
+              </p>
+              <p>
+                Download Experiment. Fail. Repeat and discover the secrets of the
+                universe! Or, you know, just get encouraged, which ever you most
+                prefer is totally fine.
+              </p>
+              <h2>Working from Home: Healthy Practices to Stay Productive</h2>
+              <ul>
+                <li>Setting a Healthy Routine</li>
+                <li>Proper Ergonomics</li>
+                <li>Exercise Regularly</li>
+                <li>Find Work-Life Balance When Working from Home</li>
+                <li>Dealing with Family Members and Coworkers</li>
+              </ul>
+              <img src="images/blog/single-blog-5.jpg" alt="banner" />
+              <p>
+                We are creatures of habit – and that is because routine helps us
+                both mentally and physically to prepare for things. One of the
+                benefits of working from home is flexibility. It might be tempting
+                to roll out of bed and onto your couch and starting checking emails
+                or browsing through social media, but you’ll need to establish a
+                schedule when it comes to working remotely.
+                <br />
+                <br />
+                What’s goes into your schedule is a guide on what you’re supposed to
+                do at a specific time. Get up early in the morning, take a shower,
+                prepare a cup of coffee and take breakfast, then get dressed as if
+                you’re actually reporting to work. You don’t have to wear a suit and
+                a tie, but you’ll need to prepare for the day the same way you do
+                while going to the office. Set regular working hours and include
+                breaks and meal times. In the end, a routine can be extremely
+                powerful at helping you get started every day.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer" data-v-component-site>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer-subscribe-title">
+            <h2>Get the latest app updates</h2>
+          </div>
+        </div>
+        <div class="col-lg-8 mx-auto">
+
+          <div data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="subscribe">
+
+            <form action="" method="post" class="footer-subscribe-form">
+              <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
+
+              <!-- if these hidden inputs are filled then ignore, robots -->
+
+              <input type="text" class="form-control d-none" placeholder="Subject" name="contact-form">
+
+              <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty">
+
+              <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
+
+
+              <div class="notifications" data-v-notifications>
+
+                <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
+
+                  <div class="icon align-middle me-2">
+                    <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                  </div>
+
+                  <div class="flex-grow-1 align-self-center text-small">
+                    <div>
+                      <div data-v-notification-text>
+                        This is a placeholder for a notification message.
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                      <!-- <i class="la la-times"></i> -->
+                    </span>
+                  </button>
+                </div>
+
+                <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success>
+
+                  <div class="icon align-middle me-2">
+                    <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                  </div>
+
+                  <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+                    This is a placeholder for a success message.
+                  </div>
+
+                  <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                      <!-- <i class="la la-times"></i> -->
+                    </span>
+                  </button>
+                </div>
+
+                <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info>
+
+                  <div class="icon align-middle me-2">
+                    <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                  </div>
+
+                  <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                    This is a placeholder for a info message.
+                  </div>
+
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                      <!-- <i class="la la-times"></i> -->
+                    </span>
+                  </button>
+                </div>
+
+              </div>
+
+              <div class="from-group">
+                <div class="input-group">
+                  <input type="email" name="email" class="form-control" placeholder="Enter Your E-mail">
+                  <div class="subscribe">
+                    <button class="btn btn-subscribe" type="submit">
+                      <span class="btn-area">
+                        Subscribe
+                      </span>
+                      <svg class="icon-left" xmlns="http://www.w3.org/2000/svg" width="16.317" height="15.323" viewBox="0 0 16.317 15.323">
+                        <g data-name="Group 1167">
+                          <g data-name="Group 1166">
+                            <path data-name="Path 1349" d="M.004 5.359a.7.7 0 00.587.693l6.091 1.609L.591 9.27a.7.7 0 00-.587.693v4.656a.7.7 0 00.206.5.726.726 0 00.119.1.7.7 0 00.675.044l14.911-6.958a.7.7 0 000-1.274L1.004.066a.7.7 0 00-1 .637zm13.952 2.3" fill="#fff" />
+                          </g>
+                        </g>
+                      </svg>
+                      <svg class="icon-center" xmlns="http://www.w3.org/2000/svg" width="16.317" height="15.323" viewBox="0 0 16.317 15.323">
+                        <g data-name="Group 1167">
+                          <g data-name="Group 1166">
+                            <path data-name="Path 1349" d="M.004 5.359a.7.7 0 00.587.693l6.091 1.609L.591 9.27a.7.7 0 00-.587.693v4.656a.7.7 0 00.206.5.726.726 0 00.119.1.7.7 0 00.675.044l14.911-6.958a.7.7 0 000-1.274L1.004.066a.7.7 0 00-1 .637zm13.952 2.3" fill="#fff" />
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <div class="footer-description">
+              <img src="images/logo.png"" loading=" lazy" alt="logo" data-v-site-logo>
+              <div>All right reserved copyright &copy;
+                <span data-v-global-site-title>StaticMania</span>
+                <span id="newYear" data-v-year></span>&ensp;
+              </div>
+              <p>
+                <span class="muted">Powered by</span>
+                <a href="https://vvveb.com/" target="_blank" class="text-muted">Vvveb</a>
+              </p>
+              <ul class="footer-description-social">
+                <li>
+                  <a href="#">
+                    <i class="ti-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ti-twitter-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ti-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="footer-widget">
+              <h4>Sitemap</h4>
+              <div class="footer-widget-list">
+                <ul>
+                  <li>
+                    <a class="scroll-to" href="/page/about">About Apsho
+                  </li>
+                  </a>
+                  <li>
+                    <a class="scroll-to" href="#faq">Frequently Ask Question
+                  </li>
+                  </a>
+                  <li>
+                    <a href="/page/privacy-policy">Privacy & Policy
+                  </li>
+                  </a>
+                  <li>
+                    <a class="scroll-to" href="/blog">Latest Articles
+                  </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="footer-widget">
+              <h4>Address</h4>
+              <div class="footer-widget-list">
+                <ul>
+                  <li>
+                    <a href="tel:5511112377" data-v-site-phone-number>
+                      <i class="ti-mobile"></i>
+                      <span data-v-site-phone-number>+55 (111) 123 777</span>
+                    </a>
+                  <li>
+                    <span data-v-if="site.contact-email">
+                      <a href="mailto:contact@mysite.com" data-v-site-contact-email>
+                        <i class="ti-email"></i>
+                        <span data-v-site-contact-email>contact@mysite.com</span>
+                      </a>
+                  <li>
+                    <i class="ti-pin"></i>
+                    <span data-v-site-address>23 Khan Niketon, Grand Street, NYK.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+  <!-- Non Critical CSS -->
+  <link href="css/non-critical.css" rel="stylesheet" />
+  <!-- Vendor JS -->
+  <script src="vendor/jQuery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="vendor/slick/slick.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/match-height/match-height.js"></script>
+  <script src="vendor/headroomjs/headroom.min.js"></script>
+  <script src="vendor/magnific-popup/magnific-popup.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
